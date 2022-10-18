@@ -14,29 +14,30 @@
 
     </head> 
     <body>
-        <div class="quote-container" id="quote-container">
-            <div class="quote-text"> 
-                <i class="fas fa-quote-left"></i> 
-                <span id="quote"></span> 
-            </div>
-            <div class="quote-author"> 
-                <span id="author"> 
-                </span>
+        <body>
+        <div class="container" id="quote-container">
+            <h1>
+            <i class="fas fa-quote-left"></i>
+            <span class="quote" id="quote"></span>
             
+            </h1>
+            
+            <p class="author" id="author"></p>
+            
+            <hr/>
+            <div class="buttons">
+                <a class="twitter" id="tweet" data-size="large" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
+                
+                 <a class="loader" onclick="getNewQuote()">Next quote</a>
+                
+                 <a class="instagram" id="instagram" data-size="large" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                
+               
+               
             </div>
-            <!-- Buttons -->
-            <div class="button-container">
-                <button class="twitter-button" id="twitter" title="Tweet This!"> 
-                    <i class="fas fa-twitter"></i> 
-                </button>
-                <button id="new-quote">New Quote</button> 
-            </div> 
         </div>
-        <!-- Loader --> 
-        <div class="loader" id="loader">
-        </div>
-        <!-- Script -->
-        <script src="script.js">
-        </script> 
-    </body> 
+
+        <!--LINK CUSTOM JS FILE-->
+        <script src="script.js"></script>
+    </body>
 </html>
