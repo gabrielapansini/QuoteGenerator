@@ -1,6 +1,7 @@
 const text=document.getElementById("quote");
 const author=document.getElementById("author");
 const tweetButton=document.getElementById("tweet");
+const instagramButton=document.getElementById("instagram");
 
 const getNewQuote = async () =>
 {
@@ -33,6 +34,9 @@ const getNewQuote = async () =>
 
     //tweet the quote
     tweetButton.href="https://twitter.com/intent/tweet?text="+quote+" ~ "+auth;
+    
+    //share the quote
+    instagramButton.href="https://www.instagram.com/?url=https://www.drdrop.co/"+quote+" ~ "+auth;
 
 }
 
